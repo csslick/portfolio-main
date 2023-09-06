@@ -1,0 +1,184 @@
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #efefef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  background: #000;
+  padding: 1em 2em;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-color-mid {
+  color: #666;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  header .container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .container h1 {
+    font-size: 24px;
+  }
+  header .container nav li {
+    display: inline-block;
+    margin-left: 2em;
+  }
+  #intro .container {
+    height: calc(100vh - 80px);
+    display: flex;
+  }
+  #intro .container .intro-text,
+  #intro .container .profile-image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+  }
+  #intro .container .intro-text {
+    padding-left: 20px;
+  }
+  #intro .container .intro-text h2 {
+    font-size: 5vw;
+  }
+  #intro .container .intro-text .sub-title {
+    font-size: 1.4em;
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+  }
+  #intro .container .intro-text .sub-title span {
+    display: inline-block;
+    width: 3em;
+    border: 1px solid #333;
+    margin-right: 10px;
+  }
+  #intro .container .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  #intro .container .profile-image img {
+    width: 70%;
+    border-radius: 30% 70% 36% 64%/66% 30% 70% 34%;
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.2);
+    animation-name: profile_anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .container {
+    height: 80px;
+    display: flex;
+  }
+  header .container h1 {
+    display: none;
+  }
+  header .container nav {
+    width: 100%;
+  }
+  header .container nav ul {
+    width: 100%;
+    display: flex;
+  }
+  header .container nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  #intro .container {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  #intro .container .intro-text,
+  #intro .container .profile-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+  }
+  #intro .container .intro-text {
+    padding-left: 20px;
+  }
+  #intro .container .intro-text h2 {
+    font-size: 30px;
+  }
+  #intro .container .intro-text .sub-title {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+  }
+  #intro .container .intro-text .sub-title span {
+    display: inline-block;
+    width: 3em;
+    border: 1px solid #333;
+    margin-right: 10px;
+  }
+  #intro .container .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  #intro .container .profile-image img {
+    width: 70%;
+    border-radius: 30% 70% 36% 64%/66% 30% 70% 34%;
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.2);
+    animation-name: profile_anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+}
+@keyframes profile_anim {
+  0% {
+    border-radius: 30% 70% 36% 64%/66% 30% 70% 34%;
+  }
+  50% {
+    border-radius: 70% 30% 59% 41%/58% 61% 39% 42%;
+  }
+  100% {
+    border-radius: 30% 70% 36% 64%/66% 30% 70% 34%;
+  }
+}/*# sourceMappingURL=style.css.map */

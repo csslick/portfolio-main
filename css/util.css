@@ -1,0 +1,20 @@
+.btn {
+  background: #000;
+  padding: 1em 2em;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-color-mid {
+  color: #666;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}/*# sourceMappingURL=util.css.map */
