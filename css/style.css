@@ -40,6 +40,11 @@ ul {
   padding: 20px;
 }
 
+nav ul li a:hover {
+  color: steelblue;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   header .container {
     height: 80px;
